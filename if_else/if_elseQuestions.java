@@ -15,7 +15,10 @@ public class if_elseQuestions {
         //question11();
         //question12();
         //question13();
-        question14();
+        //question14();
+        //question15();
+        //question16();
+        question17();
     
     }
 
@@ -380,6 +383,111 @@ static void question14() {
     }
     else{
         System.out.println("Not Eligible");
+    }
+
+}
+// Q15: Check whether a student gets a scholarship.
+//
+// Given:
+// marks = 85
+// attendance = 90
+//
+// Rules:
+// First check marks.
+// If marks are 80 or above, check attendance.
+// If attendance is 75 or above → Scholarship
+// Otherwise → No Scholarship
+//
+// If marks are below 80 → No Scholarship.
+
+static void question15() {
+
+    int marks = 95;
+    int attendance = 40;
+
+    if(marks >= 80){
+        if(attendance >= 75){
+            System.out.println("Scholarship");
+        }
+        else{
+            System.out.println("No Scholarship");
+        }
+    }
+    else{
+        System.out.println("No Scholarship");
+    }
+    
+
+
+}
+// Q16: Check whether a student can appear in an exam.
+//
+// Given:
+// marks = 45
+// attendance = 80
+// hasAdmitCard = true
+//
+// Rules:
+// Attendance must be 75 or above.
+// Marks must be 40 or above.
+// Student must have an admit card.
+//
+// If all conditions are satisfied, print "Eligible".
+// Otherwise, print "Not Eligible".
+
+static void question16() {
+
+    int marks = 45;
+    int attendance = 80;
+    boolean hasAdmitCard = true;
+
+    if(attendance >= 75){
+        if(marks >= 40){
+            if(hasAdmitCard){
+                System.out.println("Eligible");
+            }
+            else{
+                System.out.println("Not Eligible");
+            }
+        }
+        else{
+            System.out.println("Not Eligible");
+        }
+    }
+    else{
+        System.out.println("Not Eligible");
+    }
+
+}
+// Q17: Check whether a person gets a discount.
+//
+// Given:
+// age = 22
+// isMember = true
+//
+// Rules:
+// A person gets a discount if:
+// 1. Age is 60 or above, OR
+// 2. The person is a member AND age is 18 or above.
+//
+// Print:
+// Discount
+// or
+// No Discount
+
+static void question17() {
+
+    int age = 22;
+    boolean isMember = true;
+
+    if(age >= 60 ){
+        System.out.println("Discount");
+    }
+    else if(isMember && age >=18){
+        System.out.println("Discount");
+    }
+    else{
+        System.out.println("No Discout");
     }
 
 }
