@@ -123,8 +123,8 @@ static void question5() {
 
 static void question6() {
 
-    int length = 10;
-    int width = 5;
+    int length = 12;
+    int width = 6;
 
     int area = length * width; 
 

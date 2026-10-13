@@ -3,7 +3,9 @@ public class While_Loop {
     public static void main(String[] args) {
             //reverseOne();
             //table();
-            sumOfNumber();
+            //sumOfNumber();
+            //sumofevennum();
+            factorial();
         
         
     }
@@ -35,6 +37,7 @@ public class While_Loop {
      }
 
      static void sumOfNumber(){
+
       int i=1;
       int sum=0;
       while(i<=10){
@@ -43,5 +46,26 @@ public class While_Loop {
 
       }
       System.out.println(sum);
+     }
+
+     static void sumofevennum(){
+        int num = 2;
+        int sum = 0;
+        while(num <= 10){
+            sum = sum + num;
+            num+=2;
+        }
+        System.out.println(sum);
+     }
+     
+     static void factorial(){
+        int num  = 6;
+        int sum = 1;
+        while(num >= 1){
+            sum = sum*num;
+             num--;
+        }
+        System.out.println(sum);
+
      }
 }
