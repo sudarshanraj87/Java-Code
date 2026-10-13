@@ -483,7 +483,7 @@ static void question17() {
     if(age >= 60 ){
         System.out.println("Discount");
     }
-    else if(isMember && age >=18){
+    else if(isMember && age >=19){
         System.out.println("Discount");
     }
     else{
